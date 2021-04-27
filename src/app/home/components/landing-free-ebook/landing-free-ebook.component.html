@@ -1,0 +1,146 @@
+<!-- <section class="hero" id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 my-20">
+                <h1 class="text-center text-blue mb-0">product<br />prod
+                </h1>
+            </div>
+        </div>
+        <div class="row features">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-0 font-weight-bold">Are you looking to:</h2>
+                <ul class="features-list">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> reason 1
+                        behaved dog?</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> reason 1
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> reason 1</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> reason 1</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> reason 1</li>
+                </ul>
+                <h3 class="font-0weight-bold"><strong>click below!</strong></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ebook-form bg-blue" id="free-ebook">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/landing-page/free-ebook1.png" class="img-fluid img-ebook" alt="free ebook" />
+            </div>
+            <div class="col-md-6">
+                <form [formGroup]="newsletterForm" (submit)="submit()" class="newsletter-form">
+                    <mat-form-field class="form-field" appearance="standard">
+                        <mat-label> Your Name*</mat-label>
+                        <input matInput formControlName="name">
+                        <mat-error class="my-10" *ngIf="submitted || newsletterForm.controls.name.touched">
+                            <span *ngIf="submitted || newsletterForm.controls.name.errors.required">This field is
+                                mandatory.</span>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="form-field" appearance="standard">
+                        <mat-label> Your Email*
+                        </mat-label>
+                        <input matInput formControlName="email" type="email">
+                        <mat-error class="my-10" *ngIf="submitted || newsletterForm.controls.email.touched">
+                            <span *ngIf="submitted || newsletterForm.controls.email.errors.required">This field is
+                                mandatory.</span>
+                            <span *ngIf="submitted || newsletterForm.controls.email.errors.pattern">This field is
+                                invalid.</span>
+                        </mat-error>
+                    </mat-form-field>
+                    <p class="text-white mt-20">Gesiklo does not share our subscribers’ information with any third
+                        party.
+                        For Gesiklo educational and promotional purposes only. </p>
+                    <button class="btn btn-light text-blue font-weight-bold btn-block text-uppercase mt-10"
+                        type="submit">Click to download for free!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Testimonials</h1>
+                <p class="text-center mb-50">What Others Say</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="assets/img/landing-page/testimonial11.jpg" class="rounded-circle" alt="testimonial" />
+                    <p class="text-paragraph">"testimonial 1</p>
+                    <p><strong>John Wolff, London, UK</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="assets/img/landing-page/testimonial21.jpg" class="rounded-circle" alt="testimonial" />
+                    <p class="text-paragraph">testimonial 2</p>
+                    <p><strong>Joanna A., Dog Owner</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="assets/img/landing-page/testimonial31.jpg" class="rounded-circle" alt="testimonial" />
+                    <p class="text-paragraph">testimonial 3</p>
+                    <p><strong>Dr. J Coates, Veterinary Advisor at petMD.com</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="call-to-action bg-blue py-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-white font-weight-bold mb-20">Free Download</h1>
+                <h2 class="text-white mb-40">Get your free copy of the e-book</h2>
+                <a href="/lp/free-ebook#hero" class="btn-download mx-auto btn w-50 btn-block btn-outline-light">START
+                    DOWNLOAD</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="lp-footer bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-white mb-0 py-10">© 2021 Doggesik. All right Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+<section class="landing-page-wrap">
+    <main class="d-flex align-items-center justify-content-center">
+        <div class="form text-center">
+            <h1>1-Click Software Builds You An <span class="text-yellow">“Automated-Store"</span> & Drives<br />
+                <span>Free BUYER Traffic To It In 30 Seconds!</span>
+            </h1>
+            <p>Newbies Are Already Getting Results, Now It’s Your Turn…</p>
+            <form [formGroup]="newsletterForm" (submit)="submit()" class="newsletter-form my-50">
+                <input type="text" class="form-control mb-20" placeholder="Enter Your Best E-Mail Address Here..."
+                    formControlName="email" type="email">
+                <mat-error class="d-block text-white my-20 h4"
+                    *ngIf="submitted && newsletterForm.controls['email'].errors?.required">This
+                    email address is mandatory</mat-error>
+                <mat-error class="d-block text-white my-20 h4"
+                    *ngIf="submitted && newsletterForm.controls['email'].errors?.email">
+                    This
+                    email address is invalid.</mat-error>
+                <button class="btn btn-yellow text-black btn-xl font-weight-bold btn-block mt-10" type="submit">Get This
+                    PROVEN
+                    Software & Training</button>
+            </form>
+        </div>
+    </main>
+</section>

@@ -1,0 +1,61 @@
+@import "~src/styles/main.scss";
+
+.landing-page-wrap{
+    background: black;
+    min-height: 100vh;
+    main{
+        min-height: 100vh;
+    }
+    h1{
+        color:white;
+        font-size: 35px;
+        line-height: normal;
+        span.text-yellow{
+            font-size:35px;
+        }
+    }
+    p{
+        color:white;
+        font-style: italic;
+        font-size:22px;
+    }
+    h1,p{
+        font-weight:300;
+        font-family: 'Montserrat', sans-serif;
+        @media (max-width:750px){
+            padding:0 5%;
+        }
+        span{
+            font-weight: bold;
+            font-size:48px;
+            line-height:62px;
+        }
+    }
+    .newsletter-form{
+        width:65%;
+        margin:0 auto;
+        @media(max-width:750px){
+            width:90%;
+        }
+        input,button{
+            height:60px;
+            font-size:24px;
+            line-height: 50px;
+            padding:0;
+            text-align: center;
+            @media (max-width:480px){
+                height:50px;
+                font-size:18px;
+                line-height: 40px;
+            }
+            @media (max-width:350px){
+                height:50px;
+                font-size:15px;
+                line-height: 40px;
+            }
+        }
+        input{
+            padding-left:20px;
+        }
+    }
+}
