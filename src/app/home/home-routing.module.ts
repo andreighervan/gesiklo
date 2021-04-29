@@ -7,7 +7,7 @@ import { HomeComponent } from './home.component';
 
 const routes: Routes = [{ path: '', component: HomeComponent },
 { path: 'cookies', component: CookiesComponent },
-{ path: 'thank-you-ebook', component: ThankYouEbookHomeComponent }
+{ path: 'thank-you', component: ThankYouEbookHomeComponent }
 ];
 
 @NgModule({

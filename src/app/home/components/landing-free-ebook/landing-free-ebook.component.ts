@@ -34,7 +34,7 @@ export class LandingFreeEbookHomeComponent implements OnInit {
     this.coreService.subscribeToList(this.newsletterForm.value)
       .subscribe(res => {
         this.newsletterForm.reset();
-        this.router.navigate(['/lp/thank-you-ebook']);
+        this.router.navigate(['/lp/thank-you']);
         window.scrollTo({ top: 0 });
       }, err => {
         console.log(err);

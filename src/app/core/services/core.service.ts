@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CoreService {
-  mailChimpEndpoint = 'https://doggesik.us2.list-manage.com/subscribe/post-json?u=a5d017a0c21c1dd0fb91f1509&id=ca9c0cecda';
+  mailChimpEndpoint = 'https://gesiklo.us1.list-manage.com/subscribe/post-json?u=9207b9c77dbf9c9bb6ec108de&id=97f4d377f9';
 
   private showComponent = new BehaviorSubject<boolean>(true);
   showComponent$ = this.showComponent.asObservable();
@@ -55,7 +55,7 @@ export class CoreService {
   subscribeToList(data): any {
     const params = new HttpParams()
       .set('EMAIL', data.email)
-      .set('b_a5d017a0c21c1dd0fb91f1509_ca9c0cecda', '')
+      .set('b_9207b9c77dbf9c9bb6ec108de_97f4d377f9', '')
       .set('callback', `__ng_jsonp__.__req${this.times}.finished`);
     this.times = this.times + 1;
     const mailChimpUrl = `${this.mailChimpEndpoint}&${params.toString()}`;
