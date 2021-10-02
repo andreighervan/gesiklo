@@ -29,6 +29,9 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/icons/fontawesome.min.css",
+              "src/assets/icons/brands.min.css",
+              "src/assets/icons/solid.min.css",
               "src/styles.scss"
             ],
             "scripts": [

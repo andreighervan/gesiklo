@@ -1,0 +1,53 @@
+@import "~src/styles/main.scss";
+
+.thank-you-header{
+    border:2px solid gray;
+    padding:1.875rem;
+    h4{
+        margin:1rem 0;
+        @media(max-width:580px){
+            font-size:1.2rem;
+            margin:1rem 0;
+        }
+    }
+}
+main{
+h2{
+    margin:2rem 0;
+}
+p,h4{
+    margin-bottom:1rem;
+}
+h3{
+    @media(max-width:580px){
+        font-size:1.2rem;
+    }
+}
+ul{
+    padding-left:2rem;
+    li{
+    font-family: Monserrat;
+    line-height: 28px;
+    font-size: 16px;
+    }
+}
+.btn-instant-access{
+    text-align:center;
+    display:block;
+    max-width:400px;
+    background: $orange1;
+    color:white;
+    font-weight:bold;
+    font-size:2.25rem;
+    text-decoration:none;
+    margin:1.5rem auto;
+    padding:1.5rem;
+    border-radius:4px;
+    &:hover{
+        opacity:.8;
+    }
+    @media (max-width: 61.99em){
+         font-size: 1.6rem;
+    }
+}
+}

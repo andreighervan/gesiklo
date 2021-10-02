@@ -1,0 +1,18 @@
+<section class="add-post-wrapper py-40" *ngIf="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="py-10">{{blog.title}}</h1>
+                <img [src]="blog.fileUploaded" [alt]="blog.title" class="img-fluid" />
+                <app-blog-content [blogContent]="blog.blogContent"></app-blog-content>
+                <h2 class="text-center mt-60 mb-20 text-uppercase font-weight-bold font-italic">Get Free Ebook</h2>
+                <h3 class="text-center my-20">Fill out the form to get free ebook about a dog game</h3>
+                <app-newsletter-widget class="text-center" [color]="color"></app-newsletter-widget>
+                <!--  <app-comment></app-comment> -->
+            </div>
+            <div class="col-md-4">
+                <app-sidebar></app-sidebar>
+            </div>
+        </div>
+    </div>
+</section>

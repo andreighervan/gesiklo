@@ -1,0 +1,81 @@
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 my-20">
+                <h1 class="text-center text-blue mb-0">THE ENZYMATIC EDGE <br />How To Get More Protein From Your
+                    Shakes And Food </h1>
+                <h3 class="text-center text-blue mb-0">In This FREE eBook You Will See How To Crank Your Muscle Gains To
+                    New Heights By Transforming 1 Gram Of Protein Into 3 Grams</h3>
+            </div>
+        </div>
+        <div class="row features">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-0 font-weight-bold">Are you looking to:</h2>
+                <ul class="features-list">
+                    <li><i class="fa fa-check" aria-hidden="true"></i>Explode Your Muscle Growth?</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>Experience faster muscle recovery?
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>Increase your absorption of key amino acids &
+                        certain vitamins?</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>Experience better digestion & gut health?</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>Increase your energy levels?</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>Enhance your mental clarity and focus?</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>Boost your absorption of certain vitamins, like
+                        folate, by up to 50%?</li>
+                </ul>
+                <p class="font-0weight-bold"><strong>Just click the button below to download your FREE eBook and
+                        discover how to solve these problems using the strongest protein digesting enzyme formula
+                        ever.</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ebook-form bg-blue" id="free-ebook">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/landing-page/bioptimizers/free-ebook-bioptimizers.png" class="img-fluid img-ebook"
+                    alt="free ebook" />
+            </div>
+            <div class="col-md-6">
+                <form [formGroup]="newsletterForm" (submit)="submit()" class="newsletter-form">
+                    <mat-form-field class="form-field" appearance="standard">
+                        <mat-label> Your First Name*</mat-label>
+                        <input matInput formControlName="name">
+                        <mat-error class="my-10" *ngIf="submitted || newsletterForm.controls['name'].touched">
+                            <span *ngIf="submitted || newsletterForm.controls['name'].errors?.required">This field is
+                                mandatory.</span>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="form-field" appearance="standard">
+                        <mat-label> Your Email*</mat-label>
+                        <input matInput formControlName="email" type="email">
+                        <mat-error class="my-10" *ngIf="submitted || newsletterForm.controls.email.touched">
+                            <span *ngIf="submitted || newsletterForm.controls.email.errors?.required">This field is
+                                mandatory.</span>
+                            <span *ngIf="submitted || newsletterForm.controls.email.errors?.pattern">This field is
+                                invalid.</span>
+                        </mat-error>
+                    </mat-form-field>
+                    <p class="text-white mt-20">Gesiklo does not share our subscribers’ information with any third
+                        party.
+                        For Gesiklo educational and promotional purposes only. </p>
+                    <button class="btn btn-light text-blue font-weight-bold btn-block text-uppercase mt-10"
+                        type="submit">Click to download for free!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="lp-footer bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-white mb-0 py-10">© 2021 Gesiklo. All right Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>

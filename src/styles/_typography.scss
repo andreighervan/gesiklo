@@ -51,9 +51,7 @@ $h5-font-size: $font-size-base * 1.12 !default; //18px
 $h6-font-size: $font-size-base * 0.875 !default; //14px
 
 $headings-margin-bottom: 0 !default;
-$headings-font-family: Monserrat !default;
 $headings-font-style: null !default;
-$headings-font-weight: 700 !default;
 $headings-line-height: 1.2 !default;
 $headings-color: null !default;
 
@@ -62,7 +60,6 @@ $paragraph-margin-bottom: 0 !default;
 $lead-font-size: $font-size-base !default; //16px
 
 p {
-  font-family: Monserrat;
   line-height:28px;
   font-size:16px;
 }
