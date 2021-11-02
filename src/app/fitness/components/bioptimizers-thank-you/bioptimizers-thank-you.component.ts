@@ -12,7 +12,7 @@ export class BioptimizersThankYouComponent implements OnInit {
   constructor(private coreService: CoreService, private router: Router) { }
 
   ngOnInit(): void {
-    if (this.router.url.includes('/lp')) {
+    if (this.router.url.includes('/fitness')) {
       this.coreService.setComponentState(false);
     }
   }

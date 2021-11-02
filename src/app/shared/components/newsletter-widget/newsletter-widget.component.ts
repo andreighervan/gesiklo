@@ -49,12 +49,12 @@ export class NewsletterWidgetComponent implements OnInit {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        'api-key': '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'
+        'api-key': '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'
       },
       body: JSON.stringify({
         email: this.newsletterForm.controls['email'].value,
         attributes: { FIRSTNAME: this.newsletterForm.controls['name'].value },
-        listIds: [7],
+        listIds: [10],
         updateEnabled: true
       })
     };
@@ -64,7 +64,7 @@ export class NewsletterWidgetComponent implements OnInit {
       .then(json => {
         console.log(json);
         this.newsletterForm.reset();
-        this.router.navigate(['/lp/thank-you-ebook']);
+        this.router.navigate(['/fitness/bioptimizers-thank-you']);
         window.scrollTo({ top: 0 });
       })
       .catch(err => console.error('error:' + err));

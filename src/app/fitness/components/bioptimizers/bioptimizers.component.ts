@@ -19,7 +19,7 @@ export class BioptimizersComponent implements OnInit {
     private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-    if (this.router.url.includes('/lp')) {
+    if (this.router.url.includes('/fitness')) {
       this.coreService.setComponentState(false);
     }
     this.buildNewsletterForm();
@@ -46,12 +46,12 @@ export class BioptimizersComponent implements OnInit {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        'api-key': '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'
+        'api-key': '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'
       },
       body: JSON.stringify({
         email: this.newsletterForm.controls['email'].value,
         attributes: { FIRSTNAME: this.newsletterForm.controls['name'].value },
-        listIds: [5],
+        listIds: [10],
         updateEnabled: true
       })
     };
