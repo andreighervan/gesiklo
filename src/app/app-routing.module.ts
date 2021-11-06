@@ -11,6 +11,8 @@ const routes: Routes = [
   { path: 'lp', loadChildren: () => import('./landing-page/landing-page.module').then(m => m.LandingPageModule) },
   { path: 'dogs', loadChildren: () => import('./dogs/dogs.module').then(m => m.DogsModule) },
   { path: 'fitness', loadChildren: () => import('./fitness/fitness.module').then(m => m.FitnessModule) },
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
+  { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
 ];
 
 const routerOptions: ExtraOptions = {

@@ -1,14 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { from, Observable } from 'rxjs';
 import { first, map, } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 import { Blog } from '../models/blog';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BlogService {
-  constructor(private db: AngularFirestore) {
+  constructor(private db: AngularFirestore, private http: HttpClient) {
   }
 
   createBlogPost(value, file) {
@@ -32,19 +34,14 @@ export class BlogService {
         first());
   }
 
+  getPosts(): Observable<any[]> {
+    const url = `${environment.apiUrl}posts`
+    return this.http.get<any[]>(url);
+  }
+
   loadBlogByUrl(postUrl) {
-    return this.db.collection('blog',
-      ref => ref.where("postUrl", "==", postUrl))
-      .snapshotChanges()
-      .pipe(
-        map(snaps => {
-
-          const blogs = this.convertSnaps<Blog>(snaps);
-
-          return blogs.length == 1 ? blogs[0] : undefined;
-        }),
-        first()
-      )
+    const url = `${environment.apiUrl}posts`
+    return this.http.get<Blog>(url)
   }
 
   delete(id: string): Promise<void> {

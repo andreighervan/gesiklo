@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000/api/v1/',
+  apiUrl: 'https://gesiklo.herokuapp.com/api/v1/',
   firebase: {
     apiKey: "AIzaSyBIs5GeI3aXjKYgGH7DBq9728tYaluOwbE",
     authDomain: "gesiklo.firebaseapp.com",

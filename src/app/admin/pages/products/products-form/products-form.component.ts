@@ -60,7 +60,7 @@ export class ProductsFormComponent implements OnInit, OnDestroy {
         tag: 'h1',
       },
     ],
-    uploadUrl: 'http://localhost:3000/api/v1/public/upload/',
+    uploadUrl: 'https://gesiklo.herokuapp.com/api/v1/posts/uploadfile',
     uploadWithCredentials: false,
     sanitize: true,
     toolbarPosition: 'top',
